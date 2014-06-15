@@ -8,7 +8,7 @@
     "test": "js test.js"
   },
   "devDependencies": {
-    "utiljs": "dependencies"
+    "utiljs": "https://github.com/ngot/utiljs.git"
   },
   "repository": "http://github.com/isaacs/abbrev-js",
   "license": {
