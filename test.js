@@ -1,6 +1,6 @@
 var abbrev = require('./abbrev.js')
 var assert = require("assert")
-var util = require("util")
+var util = require("utiljs")
 
 console.log("TAP Version 13")
 var count = 0
@@ -11,8 +11,8 @@ function test (list, expect) {
   assert.deepEqual(actual, expect,
     "abbrev("+util.inspect(list)+") === " + util.inspect(expect) + "\n"+
     "actual: "+util.inspect(actual))
-  actual = abbrev.apply(exports, list)
-  assert.deepEqual(abbrev.apply(exports, list), expect,
+  actual = abbrev.apply({}, list)
+  assert.deepEqual(abbrev.apply({}, list), expect,
     "abbrev("+list.map(JSON.stringify).join(",")+") === " + util.inspect(expect) + "\n"+
     "actual: "+util.inspect(actual))
   console.log('ok - ' + list.join(' '))

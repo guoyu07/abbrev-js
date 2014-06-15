@@ -7,6 +7,9 @@
   "scripts": {
     "test": "node test.js"
   },
+  "devDependencies": {
+    "utiljs": "dependencies"
+  },
   "repository": "http://github.com/isaacs/abbrev-js",
   "license": {
     "type": "MIT",
